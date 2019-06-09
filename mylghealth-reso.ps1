@@ -207,28 +207,28 @@ function submitMyLGHealthTicket{
 
 #Function to copy MyLGHealth unlock/password reset resolution
 function mylgh-copy{
-    cd "C:\Users\cs243\Desktop\PS scripts"
+    cd "%USERPROFILE%\Dektop\PS scripts"
     Get-Content mylghealth.txt | Set-Clipboard
     Write-Host "Copied MyLGHealth Resolution`n`n"
 }
 
 #Function to copy Resolution for PDS 
 function pds-copy{
-    cd "C:\Users\cs243\Desktop\PS scripts"
+    cd "%USERPROFILE%\Dektop\PS scripts"
     Get-Content pds.txt | Set-Clipboard
     Write-Host "Copied PDS Resolution`n`n"
 }
 
 #Function to copy Resolution for DUO
 function duo-copy{
-    cd "C:\Users\cs243\Desktop\PS scripts"
+    cd "%USERPROFILE%\Dektop\PS scripts"
     Get-Content duo.txt | Set-Clipboard
     Write-Host "Copied DUO Resolution`n`n"
 }
 
 #Function to copy Resolution for VDI
 function vdi-copy{
-    cd "C:\Users\cs243\Desktop\PS scripts"
+    cd "%USERPROFILE%\Dektop\PS scripts"
     Get-Content vdi.txt | Set-Clipboard
     Write-Host "Copied VDI Resolution`n`n"
 }
