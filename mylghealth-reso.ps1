@@ -204,31 +204,33 @@ function submitMyLGHealthTicket{
 
 
 
+$workPath = $env:USERPROFILE + "\Desktop\PS scripts"
+
 
 #Function to copy MyLGHealth unlock/password reset resolution
 function mylgh-copy{
-    cd "%USERPROFILE%\Desktop\PS scripts"
+    cd $workPath
     Get-Content mylghealth.txt | Set-Clipboard
     Write-Host "Copied MyLGHealth Resolution`n`n"
 }
 
 #Function to copy Resolution for PDS 
 function pds-copy{
-    cd "%USERPROFILE%\Desktop\PS scripts"
+    cd $workPath
     Get-Content pds.txt | Set-Clipboard
     Write-Host "Copied PDS Resolution`n`n"
 }
 
 #Function to copy Resolution for DUO
 function duo-copy{
-    cd "%USERPROFILE%\Desktop\PS scripts"
+    cd $workPath
     Get-Content duo.txt | Set-Clipboard
     Write-Host "Copied DUO Resolution`n`n"
 }
 
 #Function to copy Resolution for VDI
 function vdi-copy{
-    cd "%USERPROFILE%\Desktop\PS scripts"
+    cd $workPath
     Get-Content vdi.txt | Set-Clipboard
     Write-Host "Copied VDI Resolution`n`n"
 }
